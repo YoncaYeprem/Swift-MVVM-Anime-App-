@@ -16,6 +16,16 @@
 		041BDB7228D4B7C000C11D17 /* animeappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041BDB7128D4B7C000C11D17 /* animeappTests.swift */; };
 		041BDB7C28D4B7C000C11D17 /* animeappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041BDB7B28D4B7C000C11D17 /* animeappUITests.swift */; };
 		041BDB7E28D4B7C000C11D17 /* animeappUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041BDB7D28D4B7C000C11D17 /* animeappUITestsLaunchTests.swift */; };
+		041BDB8C28D4B8EA00C11D17 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 041BDB8B28D4B8EA00C11D17 /* Alamofire */; };
+		041BDB9628D4BA0D00C11D17 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041BDB9528D4BA0D00C11D17 /* Networking.swift */; };
+		041BDB9828D4BD2700C11D17 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041BDB9728D4BD2700C11D17 /* ApiService.swift */; };
+		041BDB9A28D4C19800C11D17 /* AnimeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041BDB9928D4C19800C11D17 /* AnimeModel.swift */; };
+		041BDB9E28D4FA1500C11D17 /* AnimeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041BDB9D28D4FA1500C11D17 /* AnimeViewModel.swift */; };
+		041BDBA328D501C000C11D17 /* AnimeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041BDBA128D501C000C11D17 /* AnimeCollectionViewCell.swift */; };
+		041BDBA428D501C000C11D17 /* AnimeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 041BDBA228D501C000C11D17 /* AnimeCollectionViewCell.xib */; };
+		041BDBA728D504A800C11D17 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 041BDBA628D504A800C11D17 /* Kingfisher */; };
+		047ED27328D5D3B500E4255B /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047ED27228D5D3B500E4255B /* UIViewExtension.swift */; };
+		047ED27628D5D42600E4255B /* CustomCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047ED27528D5D42600E4255B /* CustomCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +59,14 @@
 		041BDB7728D4B7C000C11D17 /* animeappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = animeappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		041BDB7B28D4B7C000C11D17 /* animeappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = animeappUITests.swift; sourceTree = "<group>"; };
 		041BDB7D28D4B7C000C11D17 /* animeappUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = animeappUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		041BDB9528D4BA0D00C11D17 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		041BDB9728D4BD2700C11D17 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		041BDB9928D4C19800C11D17 /* AnimeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeModel.swift; sourceTree = "<group>"; };
+		041BDB9D28D4FA1500C11D17 /* AnimeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeViewModel.swift; sourceTree = "<group>"; };
+		041BDBA128D501C000C11D17 /* AnimeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeCollectionViewCell.swift; sourceTree = "<group>"; };
+		041BDBA228D501C000C11D17 /* AnimeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnimeCollectionViewCell.xib; sourceTree = "<group>"; };
+		047ED27228D5D3B500E4255B /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		047ED27528D5D42600E4255B /* CustomCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +74,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				041BDBA728D504A800C11D17 /* Kingfisher in Frameworks */,
+				041BDB8C28D4B8EA00C11D17 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,10 +119,15 @@
 		041BDB5928D4B7BC00C11D17 /* animeapp */ = {
 			isa = PBXGroup;
 			children = (
+				041BDB9428D4B9AE00C11D17 /* Components */,
+				041BDB9328D4B9A000C11D17 /* Extension */,
+				041BDB9228D4B98700C11D17 /* View */,
+				041BDB9128D4B98100C11D17 /* Model */,
+				041BDB9028D4B97900C11D17 /* ViewModel */,
+				041BDB8F28D4B97200C11D17 /* Network */,
+				041BDB8E28D4B96800C11D17 /* ViewController */,
 				041BDB5A28D4B7BC00C11D17 /* AppDelegate.swift */,
 				041BDB5C28D4B7BC00C11D17 /* SceneDelegate.swift */,
-				041BDB5E28D4B7BC00C11D17 /* ViewController.swift */,
-				041BDB6028D4B7BC00C11D17 /* Main.storyboard */,
 				041BDB6328D4B7C000C11D17 /* Assets.xcassets */,
 				041BDB6528D4B7C000C11D17 /* LaunchScreen.storyboard */,
 				041BDB6828D4B7C000C11D17 /* Info.plist */,
@@ -127,6 +152,73 @@
 			path = animeappUITests;
 			sourceTree = "<group>";
 		};
+		041BDB8E28D4B96800C11D17 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				041BDB5E28D4B7BC00C11D17 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		041BDB8F28D4B97200C11D17 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				041BDB9528D4BA0D00C11D17 /* Networking.swift */,
+				041BDB9728D4BD2700C11D17 /* ApiService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		041BDB9028D4B97900C11D17 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				041BDB9D28D4FA1500C11D17 /* AnimeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		041BDB9128D4B98100C11D17 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				041BDB9928D4C19800C11D17 /* AnimeModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		041BDB9228D4B98700C11D17 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				041BDB6028D4B7BC00C11D17 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		041BDB9328D4B9A000C11D17 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				047ED27228D5D3B500E4255B /* UIViewExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		041BDB9428D4B9AE00C11D17 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				047ED27428D5D40E00E4255B /* Cells */,
+				047ED27528D5D42600E4255B /* CustomCardView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		047ED27428D5D40E00E4255B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				041BDBA228D501C000C11D17 /* AnimeCollectionViewCell.xib */,
+				041BDBA128D501C000C11D17 /* AnimeCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +235,10 @@
 			dependencies = (
 			);
 			name = animeapp;
+			packageProductDependencies = (
+				041BDB8B28D4B8EA00C11D17 /* Alamofire */,
+				041BDBA628D504A800C11D17 /* Kingfisher */,
+			);
 			productName = animeapp;
 			productReference = 041BDB5728D4B7BC00C11D17 /* animeapp.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +311,10 @@
 				Base,
 			);
 			mainGroup = 041BDB4E28D4B7BC00C11D17;
+			packageReferences = (
+				041BDB8A28D4B8EA00C11D17 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				041BDBA528D504A800C11D17 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 041BDB5828D4B7BC00C11D17 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,6 +332,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				041BDB6728D4B7C000C11D17 /* LaunchScreen.storyboard in Resources */,
+				041BDBA428D501C000C11D17 /* AnimeCollectionViewCell.xib in Resources */,
 				041BDB6428D4B7C000C11D17 /* Assets.xcassets in Resources */,
 				041BDB6228D4B7BC00C11D17 /* Main.storyboard in Resources */,
 			);
@@ -258,9 +359,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				047ED27328D5D3B500E4255B /* UIViewExtension.swift in Sources */,
+				041BDBA328D501C000C11D17 /* AnimeCollectionViewCell.swift in Sources */,
 				041BDB5F28D4B7BC00C11D17 /* ViewController.swift in Sources */,
+				041BDB9828D4BD2700C11D17 /* ApiService.swift in Sources */,
 				041BDB5B28D4B7BC00C11D17 /* AppDelegate.swift in Sources */,
 				041BDB5D28D4B7BC00C11D17 /* SceneDelegate.swift in Sources */,
+				047ED27628D5D42600E4255B /* CustomCardView.swift in Sources */,
+				041BDB9A28D4C19800C11D17 /* AnimeModel.swift in Sources */,
+				041BDB9628D4BA0D00C11D17 /* Networking.swift in Sources */,
+				041BDB9E28D4FA1500C11D17 /* AnimeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -596,6 +704,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		041BDB8A28D4B8EA00C11D17 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		041BDBA528D504A800C11D17 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		041BDB8B28D4B8EA00C11D17 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 041BDB8A28D4B8EA00C11D17 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		041BDBA628D504A800C11D17 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 041BDBA528D504A800C11D17 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 041BDB4F28D4B7BC00C11D17 /* Project object */;
 }
